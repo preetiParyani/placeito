@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="header"></div>
     <form action="signup.php" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -19,6 +20,15 @@
         <input type="password" id="password" name="password" required>
       
         <button type="submit">Sign up</button>
-      </form>
+        </form>
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$("#header").load("header.html"); 
+			$("#footer").load("footer.html"); 
+		});
+	</script>
 </body>
 </html>

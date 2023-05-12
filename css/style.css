@@ -21,6 +21,7 @@
 }
 header,main, footer{
     clear: both;
+    margin: 0;
 }
 body{
     padding-top: 100px;
@@ -29,7 +30,7 @@ body{
   /******************************************
   /* LAYOUT
   /*******************************************/
-  nav {
+  header nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -60,6 +61,7 @@ body{
   section{
     display: block;
     margin-top: 50px;
+    margin: 10px;
   }
 
   .search-form {
@@ -91,6 +93,23 @@ body{
   }
   i{
     color: #080808;
+  }
+
+  footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #080808;
+    
+  }
+  footer nav i{
+    list-style: none;
+    margin: 10px 10px;
+    display: flex;
+    color: white;
+    align-content: center;
+    text-decoration: none;
   }
   
   

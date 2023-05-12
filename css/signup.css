@@ -8,6 +8,7 @@
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    text-shadow: #ccc;
   }
   input[type="text"],
   input[type="email"],
