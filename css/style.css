@@ -26,6 +26,19 @@ header,main, footer{
 body{
     padding-top: 100px;
 }
+ul, ol, li{
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+a{
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f2f2f2;
+  margin:0%;
+  padding: 0%;
+  
+}
   
   /******************************************
   /* LAYOUT
@@ -111,6 +124,19 @@ body{
     color: white;
     align-content: center;
     text-decoration: none;
+    
+  }
+  #learnMore{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    background-color: #233a41;
+    
     
   }
   
