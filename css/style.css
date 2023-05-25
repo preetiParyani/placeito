@@ -3,6 +3,14 @@
 /*******************************************/
 @import url(fontawesome-all.min.css);
 
+ol, ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
 /* Box Model Hack */
 *{
     box-sizing: border-box;
@@ -21,87 +29,108 @@
 clear: both;
 }
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-section, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-  clear: both;
-}
+/* Basic */
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
+	@-ms-viewport {
+		width: device-width;
+	}
 
-body {
-	line-height: 1;
-}
+	body {
+		-ms-overflow-style: scrollbar;
+	}
 
-ol, ul {
-	list-style: none;
-}
+	@media screen and (max-width: 480px) {
 
-blockquote, q {
-	quotes: none;
-}
+		html, body {
+			min-width: 320px;
+		}
 
-body {
-	-webkit-text-size-adjust: none;
-}
+	}
 
-@-ms-viewport {
-  width: device-width;
-}
+	html {
+		box-sizing: border-box;
+	}
 
-body {
-  -ms-overflow-style: scrollbar;
-}
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
 
-@media screen and (max-width: 480px) {
-
-  html, body {
-    min-width: 320px;
+/* sidebar css */
+  nav ul li a{
+    list-style: none;
+    color: #fffefe;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding: 20px 0;
   }
 
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #080808;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+/* sidebar css end */
+
+/* main css */
+
+main{
+  margin-left: 200px;
+  padding: 20px;
+
+}
+main section{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+.grid{
+  
+  position: relative;
+  display: flexbox;
+  padding: 10px;
 }
 
-html {
-  box-sizing: border-box;
-}
+#learnMore{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 
-/* *, *:before, *:after {
-  box-sizing: inherit;
-} */
+  }
+  #learnMore li a{ 
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    
+  }
+  #learnMore:hover{
+    background-color: #4a4949;
+    color: #fff;
+  }
 
-/* body {
-  background: #312450;
-} */
+  
+ 
 
-  /* body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-  } */
-
-
-
+/* main css end */
+/* 
 
 ul, ol, li, section{
   list-style: none;
@@ -115,43 +144,15 @@ a{
   margin:0%;
   padding: 0%;
   
-}
+} */
   
   /******************************************
   /* LAYOUT
   /*******************************************/
-  #sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #080808;
-    color: #fff;
-    padding: 10px;
-  }
   
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin: 0 60px;
 
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  h1{
-    margin-top: 30px;
-  }
 
-  section{
+  /* section{
     display: block;
     
 
@@ -183,7 +184,7 @@ a{
   
   .search-form button[type="submit"] {
     color: #8d8c8c;
-  }
+  } */
   
   i{
     color: #080808;
@@ -206,24 +207,9 @@ a{
     text-decoration: none;
     
   }
-  #learnMore{
-    width: 100px;
-    height: 30px;
-    border: 1px solid #080808;
-    border-radius: 5px;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    background-color: #233a41;
-    
-    
-  }
-  body main section+section section {
-    width: 49%;
-    border: 1px solid black;
-    display: block;
-  }
+  
+
+ 
   
   
   
