@@ -3,18 +3,12 @@
 /*******************************************/
 @import url(fontawesome-all.min.css);
 
-ol, ul, li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-  color: white;
+/* Box Model Hack */
+
+*{
+  box-sizing: border-box;
 }
 
-/* Box Model Hack */
-*{
-    box-sizing: border-box;
-}
 /* Clear fix hack */
 
 .clearfix:after {
@@ -28,6 +22,18 @@ a{
 .clear{
 clear: both;
 }
+/* common styles */
+ol, ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
 
 /* Basic */
 
@@ -56,28 +62,32 @@ clear: both;
 	}
 
 /* sidebar css */
+
+  nav{
+    
+    position: fixed;
+    background-color: #000000;
+    justify-content: space-between;
+    height: 100vh;
+    width: 200px;
+    
+    
+  }
+
   nav ul li a{
+    display: inline-block;
+    margin-bottom: 100px;
     list-style: none;
     color: #fffefe;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    display: block;
-    padding: 20px 0;
+    padding: 5px;
+    
   }
+  
 
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #080808;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-  }
-
+  
 /* sidebar css end */
 
 /* main css */
@@ -102,118 +112,42 @@ main section{
 }
 
 #learnMore{
-    width: 100px;
-    height: 30px;
-    border: 1px solid #080808;
-    border-radius: 5px;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #080808;
+  border-radius: 10px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   }
-  #learnMore li a{ 
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    
-  }
+  
   #learnMore:hover{
-    background-color: #4a4949;
+    background-color: #282828;
     color: #fff;
   }
 
+/* footer */
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #080808;
   
- 
-
-/* main css end */
-/* 
-
-ul, ol, li, section{
-  list-style: none;
-  margin: 0%;
-  padding: 0%;
 }
-a{
-  text-emphasis: none;
+footer nav i{
+  list-style: none;
+  margin: auto;
+  display: flex;
+  color: white;
+  align-content: center;
   text-decoration: none;
-  color: #f2f2f2;
-  margin:0%;
-  padding: 0%;
   
-} */
-  
-  /******************************************
-  /* LAYOUT
-  /*******************************************/
-  
+}
 
+@media all and (min-width: 420px){
 
-  /* section{
-    display: block;
-    
-
-  }
-
-  .search-form {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-form input[type="text"] {
-    width: 300px;
-    height: 30px;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-  }
-  
-  .search-form button[type="submit"] {
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 3px;
-    height: 30px;
-    width: 40px;
-    margin-left: -40px;
-  }
-  
-  .search-form button[type="submit"] {
-    color: #8d8c8c;
-  } */
-  
-  i{
-    color: #080808;
-  }
-
-  footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-    background-color: #080808;
-    
-  }
-  footer nav i{
-    list-style: none;
-    margin: auto;
-    display: flex;
-    color: white;
-    align-content: center;
-    text-decoration: none;
-    
-  }
-  
-
- 
-  
-  
-  
-  /******************************************
-  /* ADDITIONAL STYLES
-  /*******************************************/
-  
+}
