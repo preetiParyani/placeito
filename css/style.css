@@ -2,6 +2,7 @@
 /* CSS
 /*******************************************/
 @import url(fontawesome-all.min.css);
+@import url('vanilla.css');
 
 /* Box Model Hack */
 
@@ -23,8 +24,15 @@
 clear: both;
 }
 /* common styles */
+nav, a{
+  margin: 0;
+  padding: 0;
+}
+
 ol, ul, li{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a{
   text-decoration: none;
@@ -60,35 +68,14 @@ a{
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
-
-/* sidebar css */
-
-  nav{
-    
-    position: fixed;
-    background-color: #000000;
-    justify-content: space-between;
-    height: 100vh;
-    width: 200px;
-    
-    
+  h1{
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 3em;
   }
-
-  nav ul li a{
-    display: inline-block;
-    margin-bottom: 100px;
-    list-style: none;
-    color: #fffefe;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 5px;
-    
+  p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
   }
-  
-
-  
-/* sidebar css end */
 
 /* main css */
 
@@ -103,12 +90,6 @@ main section{
   border-radius: 5px;
   margin-bottom: 20px;
 
-}
-.grid{
-  
-  position: relative;
-  display: flexbox;
-  padding: 10px;
 }
 
 #learnMore{
@@ -127,6 +108,36 @@ main section{
     background-color: #282828;
     color: #fff;
   }
+
+/* sidebar css */
+
+  nav{
+    position: fixed;
+    background-color: #000000;
+    justify-content: space-between;
+    height: 100vh;
+    width: 200px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-bottom: 50%;
+    list-style: none;
+    color: #fffefe;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 50px;
+}
+nav ul li a:hover{
+  font-size: 1.1em;
+
+}
+  
+/* sidebar css end */
+
+
 
 /* footer */
 
@@ -149,5 +160,5 @@ footer nav i{
 }
 
 @media all and (min-width: 420px){
-
+  
 }
