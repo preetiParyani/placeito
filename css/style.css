@@ -36,7 +36,7 @@ ol, ul, li{
 }
 a{
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -76,6 +76,12 @@ a{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1em;
   }
+  body{
+    background-color: #f7f9fa;
+    --nav-height: 10vh;
+
+    padding-top: var(--nav-height);
+  }
 
 /* main css */
 
@@ -90,6 +96,9 @@ main section{
   border-radius: 5px;
   margin-bottom: 20px;
 
+}
+#intro{
+  
 }
 
 #learnMore{
@@ -110,29 +119,56 @@ main section{
   }
 
 /* sidebar css */
+.nav {
+  width: 100%;
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s;
+}
 
-  nav{
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height)));
+  box-shadow: none;
+}
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 2.5em;
+  font-weight: bold;
+}
+  /* .nav{
     position: fixed;
-    background-color: #000000;
+    background-color: transparent;
     justify-content: space-between;
-    height: 100vh;
+    height: let(--nav-height);
     width: 200px;
+    margin: 0 auto;
   }
 
   nav ul li {
     display: inline-block;
     margin-bottom: 50%;
     list-style: none;
-    color: #fffefe;
+    color: #050505;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1em;
     font-weight: 600;
     padding: 50px;
 }
-/* nav ul li a:hover{
-  font-size: 1.1em;
+  nav ul li a{
+    font-size: 1.1em;
+    color: #000000;
+    margin:  0 auto;
 
-} */
+  } */
   
 /* sidebar css end */
 
